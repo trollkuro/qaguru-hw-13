@@ -83,6 +83,7 @@ public class RegistrationTests extends TestBase {
         step("Open page", () -> {
             registrationPage.openPage();
         });
+        registrationPage.removeFooterAndBanner();
         step("Fill required fields: first name, last name, gender, number", () -> {
             registrationPage.setFirstName(firstName)
                     .setLastName(lastName)
