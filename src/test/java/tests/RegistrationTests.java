@@ -4,12 +4,14 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 import utils.FakeDataSetter;
 
 import static com.codeborne.selenide.logevents.SelenideLogger.step;
 
+@Tag("user_creation")
 public class RegistrationTests extends TestBase {
 
     private FakeDataSetter data = new FakeDataSetter();
@@ -127,7 +129,7 @@ public class RegistrationTests extends TestBase {
     }
 
     @Test
-    @Disabled
+    @Disabled("Disabled as example")
     @Feature("User creation")
     @Owner("kegorova")
     @DisplayName("(Disabled) Modal window with user data is closed")
