@@ -42,7 +42,9 @@ public class RegistrationTests extends TestBase {
         step("Open page", () -> {
             registrationPage.openPage();
         });
-        registrationPage.removeFooterAndBanner();
+        step("Remove footer and banner", () -> {
+            registrationPage.removeFooterAndBanner();
+        });
         step("Fill the form", () -> {
             registrationPage.setFirstName(firstName)
                             .setLastName(lastName)
@@ -83,7 +85,9 @@ public class RegistrationTests extends TestBase {
         step("Open page", () -> {
             registrationPage.openPage();
         });
-        registrationPage.removeFooterAndBanner();
+        step("Remove footer and banner", () -> {
+            registrationPage.removeFooterAndBanner();
+        });
         step("Fill required fields: first name, last name, gender, number", () -> {
             registrationPage.setFirstName(firstName)
                     .setLastName(lastName)
@@ -107,6 +111,9 @@ public class RegistrationTests extends TestBase {
     void modalIsClosedWithError(){
         step("Open page", () -> {
             registrationPage.openPage();
+        });
+        step("Remove footer and banner", () -> {
+            registrationPage.removeFooterAndBanner();
         });
         step("Fill required fields: first name, last name, gender, number", () -> {
             registrationPage.setFirstName(firstName)
@@ -137,6 +144,9 @@ public class RegistrationTests extends TestBase {
     void modalIsClosed(){
         step("Open page", () -> {
             registrationPage.openPage();
+        });
+        step("Remove footer and banner", () -> {
+            registrationPage.removeFooterAndBanner();
         });
         step("Fill required fields: first name, last name, gender, number", () -> {
             registrationPage.setFirstName(firstName)
