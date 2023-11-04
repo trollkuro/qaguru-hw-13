@@ -128,8 +128,4 @@ public class RegistrationPage {
         resultTableModal.checkIsNotDisplayed();
         return this;
     }
-
-
-
-
 }

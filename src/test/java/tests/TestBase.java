@@ -22,7 +22,7 @@ public class TestBase {
         Attachments.screenshotAs("Last screenshot");
         Attachments.pageSource();
         Attachments.browserConsoleLogs();
-        Attachments.addVideo();
+        //Attachments.addVideo();
     }
 
 }
