@@ -10,8 +10,6 @@ import utils.Attachments;
 
 import java.util.Map;
 
-import static java.util.List.of;
-
 public class TestBase {
 
     @BeforeAll
